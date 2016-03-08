@@ -1,0 +1,6 @@
+\.pyc
+tests/\.cache/
+\.vagrant/
+*~
+__pycache__/
+*\.pyc
