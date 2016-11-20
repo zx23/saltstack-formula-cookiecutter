@@ -12,7 +12,7 @@ Usage
 
 Generate a SaltStack formula project::
 
-    cookiecutter https://github.com/mitodl/saltstack-formula-cookiecutter
+    cookiecutter https://github.com/zx23/saltstack-formula-cookiecutter
 
 Answer few questions about formula name, your name etc.
 
