@@ -7,8 +7,8 @@
     "year": "2016",
     "version": "1",
     "owner": ["zx23", "SaltStack Formulas"],
-    "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0"],
-    "vagrant_box": ["multi", "centos/7", "debian/jessie64", "freebsd/FreeBSD-11.0-RELEASE"],
-    "supported_os": "RedHat, CentOS, Debian, FreeBSD",
-    "supported_os_family": "RedHat, Debian, FreeBSD"
+    "license": ["BSD-3", "MIT", "GNU GPL v3.0", "Apache Software License 2.0"],
+    "vagrant_box": ["freebsd/FreeBSD-11.0-RELEASE", "multi", "centos/7", "debian/jessie64"],
+    "supported_os": "FreeBSD, RedHat, CentOS, Debian",
+    "supported_os_family": "FreeBSD, RedHat, Debian"
 }

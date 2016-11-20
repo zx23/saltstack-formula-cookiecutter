@@ -22,8 +22,8 @@ Vagrant.configure(2) do |config|
     centos.vm.box = "centos/7"
   end
 
-  config.vm.define "FreeBSD" do |ubuntu|
-    ubuntu.vm.box = "freebsd/FreeBSD-11.0-RELEASE"
+  config.vm.define "FreeBSD" do |freebsd|
+    freebsd.vm.box = "freebsd/FreeBSD-11.0-RELEASE"
   end
   {% else %}
   config.vm.box = "{{ cookiecutter.vagrant_box }}"
@@ -85,9 +85,7 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get install -y apache2
   # SHELL
   config.vm.provision "shell", path: "scripts/vagrant_setup.sh"
-  {% if cookiecutter.owner == "zx23" %}
   config.vm.provision "shell", path: "scripts/gitfs_deps.sh"
-  {% endif %}
   config.vm.provision :salt do |salt|
     salt.minion_config = 'minion.conf'
     salt.bootstrap_options = '-U -Z'
@@ -96,7 +94,5 @@ Vagrant.configure(2) do |config|
     salt.colorize = true
     salt.verbose = true
   end
-  {% if cookiecutter.owner != "zx23" %}
   config.vm.provision "shell", path: "scripts/testinfra.sh"
-  {% endif %}
 end
