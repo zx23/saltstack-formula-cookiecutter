@@ -1,6 +1,3 @@
 base:
   '*':
     - {{ cookiecutter.formula_name }}
-    {% if cookiecutter.owner == "Massachusetts Institute of Technology" %}
-    - {{ cookiecutter.formula_name }}.tests
-    {% endif %}

@@ -1,14 +1,14 @@
 {
     "formula_name": "boilerplate",
     "formula_short_description": "SaltStack Formula Boilerplate contains all the boilerplate you need to create a SaltStack Formula.",
-    "full_name": "Tobias Macey",
-    "github_username": "blarghmatey",
+    "full_name": "zx23",
+    "github_username": "zx23",
     "release_date": "2016-02-19",
     "year": "2016",
-    "version": "201602",
-    "owner": ["Massachusetts Institute of Technology", "SaltStack Formulas"],
+    "version": "1",
+    "owner": ["zx23", "SaltStack Formulas"],
     "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0"],
-    "vagrant_box": ["multi", "centos/7", "debian/wheezy64", "debian/jessie64", "ubuntu/trusty64", "ubuntu/xenial64"],
-    "supported_os": "RedHat, CentOS, Ubuntu, Debian",
-    "supported_os_family": "RedHat, Debian"
+    "vagrant_box": ["multi", "centos/7", "debian/jessie64", "freebsd/FreeBSD-11.0-RELEASE"],
+    "supported_os": "RedHat, CentOS, Debian, FreeBSD",
+    "supported_os_family": "RedHat, Debian, FreeBSD"
 }
